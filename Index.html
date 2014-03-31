@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>FireBase Demo</title>
+</head>
+<body>
+    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.6/firebase.js'></script>
+    <script>
+        
+        var myRootRef = new Firebase('https://popping-fire-3486.firebaseIO.com/users/bob/name');
+        myRootRef.child('first').set('Bob');
+        myRootRef.child('last').set('Smith');
+    </script>
+
+</body>
+</html>
