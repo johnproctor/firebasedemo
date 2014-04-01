@@ -1,16 +1,29 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>FireBase Demo </title>
+    <title>FireBase Demo</title>
 </head>
-<body>
-    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.6/firebase.js'></script>
-    <script>
-        
-        var myRootRef = new Firebase('https://popping-fire-3486.firebaseIO.com/users/bob/name');
-        myRootRef.child('first').set('Bob');
-        myRootRef.child('last').set('Smith');
-    </script>
+    <body ng-app="myapp">
+        <section ng-controller="MyController">
+            <h1>FireBase Demo</h1>
+            <p>This is using angular fire to add data to angular and bind it.</p>
+            <ul>
+                <li ng-repeat="item in items">{{item.foo}}</li>
+            </ul>
+        </section>
 
-</body>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+        <script src="https://cdn.firebase.com/js/client/1.0.6/firebase.js"></script>
+        <script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.js"></script>
+        <script>
+            var myapp = angular.module("myapp", ["firebase"]);
+            myapp.controller("MyController", ["$scope", "$firebase",
+                function ($scope, $firebase) {
+                    $scope.items = $firebase(new Firebase('https://popping-fire-3486.firebaseIO.com/foo'));
+                    $scope.items.$add({foo: "bar"});    
+                }
+            ]);
+        </script>
+
+    </body>
 </html>

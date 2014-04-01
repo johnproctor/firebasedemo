@@ -3,3 +3,8 @@ c:\users\john.proctor\documents\visual studio 2012\Projects\WebApplication1\bin\
 c:\users\john.proctor\documents\visual studio 2012\Projects\WebApplication1\obj\Debug\FirebaseDemo.csprojResolveAssemblyReference.cache
 c:\users\john.proctor\documents\visual studio 2012\Projects\WebApplication1\obj\Debug\WebApplication1.dll
 c:\users\john.proctor\documents\visual studio 2012\Projects\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\John.Proctor\Firebase Demo\bin\WebApplication1.dll
+C:\Users\John.Proctor\Firebase Demo\bin\WebApplication1.pdb
+C:\Users\John.Proctor\Firebase Demo\obj\Debug\FirebaseDemo.csprojResolveAssemblyReference.cache
+C:\Users\John.Proctor\Firebase Demo\obj\Debug\WebApplication1.dll
+C:\Users\John.Proctor\Firebase Demo\obj\Debug\WebApplication1.pdb
